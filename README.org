@@ -1,0 +1,68 @@
+#+title: Learn Flutter Animation
+#+author: Md. Shafiqur Rahman
+#+options: h:1 num:nil toc:nil
+
+
+* What is Animation
+A series of images or frames, that represent motion or change over
+time.
+* What are the main keys to do animation in Flutter?
+** Animation Controller
+Its responsible to control animation cycle. Repeat, Forward, reverse
+etc. 
+** Animation
+Value that chanhes over time and can be used to animate widget or
+orther app elements.
+** Tween
+Values betweeen which an animation can interpolate, such as a varity
+of colors, angles, sizes, integers.
+** AnimatedFoo or FooTransition Widget
+Widgets that are used for different animations type.
+** Animated Builder
+A widget that gives developer more control, anabling them to set
+unique animations for their widgets.
+* What are animation concepts in Flutter?
+** Duration
+The timne it takes to complete an animation is referred to as the
+animation duration. A Flutter Duration object which represents a
+period of time in milliseconds and seconds, can be used to specify
+this. 
+** Curves
+Curves are mathematical operations that control the duration progress
+of an animation. ~Curves.linear~, ~Curves.easeIn~, ~Curves.easeOut~,
+and ~Curves.easeInOut~ are just a few of the buil-in curves offered by
+Flutter. These curves can be used to create a variety of effects,
+including gradual acceleration and deceleration.
+#+begin_src dart 
+  _radiusAnimation = Tween(begin: 20.0, end: 400.0)
+                     .chain(CurveTween(currve: Curves.bounceInOut))
+                     .animate(_radiusController);
+#+end_src
+
+** Interpolations
+Interpolation is used to create smooth transitions between the
+starting and ending states of an animation.
+#+begin_src 
+  Animation<double> animation = Tween<double>(begin:0,end:10)
+                                .animate(controller);
+    #+end_src
+
+**
+* What are animation types in Flutter?
+** Implicit
+No need to control it. It is less complex and takes less coding to
+implement than explicit animations, but they may be less customizable
+in terms of the duration, curve and other aspects of the animation
+** Explicit
+Developer need to control it. This animations are triggered manually
+by the developer, such as when a button is pressed or when a certain
+condition is met. In an explicit animation, the developer is
+responsible for specifying the animation duration, curve and other properties.
+** Low Level Animation
+Need to create and control it. Custom painter.
+** Third party animation framework
+Put and go. Flare(Rive) or Lottie.
+* Flutter Animation Decision Tree
+#+CAPTION: Flutter Animation Decision Tree
+#+NAME:   fig:animation-decision-tree.png
+[[./animation-decision-tree.png]]
