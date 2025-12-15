@@ -14,13 +14,19 @@ class HomeView extends GetView<HomeController> {
         padding: const EdgeInsets.all(8.0),
         child: GridView.count(
           crossAxisCount: 3,
-
+          crossAxisSpacing: 8,
           children: [
             ElevatedButton(
               onPressed: () {
                 Get.toNamed(Routes.EXAMPLE_ONE);
               },
               child: Text("Example One"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed(Routes.EXAMPLE_TWO);
+              },
+              child: Text("Example Two"),
             ),
           ],
         ),
