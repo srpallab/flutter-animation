@@ -34,6 +34,12 @@ class HomeView extends GetView<HomeController> {
               },
               child: Text("Example 3D"),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed(Routes.EXAMPLE_HERO_ANIMATION);
+              },
+              child: Text("Hero Animation"),
+            ),
           ],
         ),
       ),
