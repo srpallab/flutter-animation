@@ -28,6 +28,12 @@ class HomeView extends GetView<HomeController> {
               },
               child: Text("Example Two"),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed(Routes.EXAMPLE_TREE_D);
+              },
+              child: Text("Example 3D"),
+            ),
           ],
         ),
       ),
