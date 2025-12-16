@@ -9,6 +9,7 @@ abstract class Routes {
   static const EXAMPLE_TREE_D = _Paths.EXAMPLE_TREE_D;
   static const EXAMPLE_HERO_ANIMATION = _Paths.EXAMPLE_HERO_ANIMATION;
   static const EXAMPLE_IMPLICIT_ANIMATION = _Paths.EXAMPLE_IMPLICIT_ANIMATION;
+  static const CUSTOM_PAINTER_POLYGONS = _Paths.CUSTOM_PAINTER_POLYGONS;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const EXAMPLE_TREE_D = '/example-tree-d';
   static const EXAMPLE_HERO_ANIMATION = '/example-hero-animation';
   static const EXAMPLE_IMPLICIT_ANIMATION = '/example-implicit-animation';
+  static const CUSTOM_PAINTER_POLYGONS = '/custom-painter-polygons';
 }

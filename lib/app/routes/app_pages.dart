@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/custom_painter_polygons/bindings/custom_painter_polygons_binding.dart';
+import '../modules/custom_painter_polygons/views/custom_painter_polygons_view.dart';
 import '../modules/example_hero_animation/bindings/example_hero_animation_binding.dart';
 import '../modules/example_hero_animation/views/example_hero_animation_view.dart';
 import '../modules/example_implicit_animation/bindings/example_implicit_animation_binding.dart';
@@ -50,6 +52,11 @@ class AppPages {
       name: _Paths.EXAMPLE_IMPLICIT_ANIMATION,
       page: () => const ExampleImplicitAnimationView(),
       binding: ExampleImplicitAnimationBinding(),
+    ),
+    GetPage(
+      name: _Paths.CUSTOM_PAINTER_POLYGONS,
+      page: () => const CustomPainterPolygonsView(),
+      binding: CustomPainterPolygonsBinding(),
     ),
   ];
 }

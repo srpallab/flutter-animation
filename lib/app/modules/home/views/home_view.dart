@@ -46,6 +46,12 @@ class HomeView extends GetView<HomeController> {
               },
               child: Text("Implicit Animation"),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed(Routes.CUSTOM_PAINTER_POLYGONS);
+              },
+              child: Text("Custom Painter and Polygons"),
+            ),
           ],
         ),
       ),
