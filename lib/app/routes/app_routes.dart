@@ -8,6 +8,7 @@ abstract class Routes {
   static const EXAMPLE_TWO = _Paths.EXAMPLE_TWO;
   static const EXAMPLE_TREE_D = _Paths.EXAMPLE_TREE_D;
   static const EXAMPLE_HERO_ANIMATION = _Paths.EXAMPLE_HERO_ANIMATION;
+  static const EXAMPLE_IMPLICIT_ANIMATION = _Paths.EXAMPLE_IMPLICIT_ANIMATION;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const EXAMPLE_TWO = '/example-two';
   static const EXAMPLE_TREE_D = '/example-tree-d';
   static const EXAMPLE_HERO_ANIMATION = '/example-hero-animation';
+  static const EXAMPLE_IMPLICIT_ANIMATION = '/example-implicit-animation';
 }
