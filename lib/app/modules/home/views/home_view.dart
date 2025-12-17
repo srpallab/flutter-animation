@@ -15,6 +15,7 @@ class HomeView extends GetView<HomeController> {
         child: GridView.count(
           crossAxisCount: 3,
           crossAxisSpacing: 8,
+          mainAxisSpacing: 7,
           children: [
             ElevatedButton(
               onPressed: () {
@@ -38,19 +39,28 @@ class HomeView extends GetView<HomeController> {
               onPressed: () {
                 Get.toNamed(Routes.EXAMPLE_HERO_ANIMATION);
               },
-              child: Text("Hero Animation"),
+              child: Text("Hero Animation", textAlign: TextAlign.center),
             ),
             ElevatedButton(
               onPressed: () {
                 Get.toNamed(Routes.EXAMPLE_IMPLICIT_ANIMATION);
               },
-              child: Text("Implicit Animation"),
+              child: Text("Implicit Animation", textAlign: TextAlign.center),
             ),
             ElevatedButton(
               onPressed: () {
                 Get.toNamed(Routes.CUSTOM_PAINTER_POLYGONS);
               },
-              child: Text("Custom Painter and Polygons"),
+              child: Text(
+                "Custom Painter and Polygons",
+                textAlign: TextAlign.center,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed(Routes.THREE_D_DRAWER);
+              },
+              child: Text("3D Drawer"),
             ),
           ],
         ),

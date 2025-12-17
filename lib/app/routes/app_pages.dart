@@ -14,6 +14,8 @@ import '../modules/example_two/bindings/example_two_binding.dart';
 import '../modules/example_two/views/example_two_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/three_d_drawer/bindings/three_d_drawer_binding.dart';
+import '../modules/three_d_drawer/views/three_d_drawer_view.dart';
 
 part 'app_routes.dart';
 
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.CUSTOM_PAINTER_POLYGONS,
       page: () => const CustomPainterPolygonsView(),
       binding: CustomPainterPolygonsBinding(),
+    ),
+    GetPage(
+      name: _Paths.THREE_D_DRAWER,
+      page: () => const ThreeDDrawerView(),
+      binding: ThreeDDrawerBinding(),
     ),
   ];
 }
