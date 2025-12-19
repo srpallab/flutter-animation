@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/animated_prompt/bindings/animated_prompt_binding.dart';
+import '../modules/animated_prompt/views/animated_prompt_view.dart';
 import '../modules/custom_painter_polygons/bindings/custom_painter_polygons_binding.dart';
 import '../modules/custom_painter_polygons/views/custom_painter_polygons_view.dart';
 import '../modules/example_hero_animation/bindings/example_hero_animation_binding.dart';
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.THREE_D_DRAWER,
       page: () => const ThreeDDrawerView(),
       binding: ThreeDDrawerBinding(),
+    ),
+    GetPage(
+      name: _Paths.ANIMATED_PROMPT,
+      page: () => const AnimatedPromptView(),
+      binding: AnimatedPromptBinding(),
     ),
   ];
 }

@@ -11,6 +11,7 @@ abstract class Routes {
   static const EXAMPLE_IMPLICIT_ANIMATION = _Paths.EXAMPLE_IMPLICIT_ANIMATION;
   static const CUSTOM_PAINTER_POLYGONS = _Paths.CUSTOM_PAINTER_POLYGONS;
   static const THREE_D_DRAWER = _Paths.THREE_D_DRAWER;
+  static const ANIMATED_PROMPT = _Paths.ANIMATED_PROMPT;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const EXAMPLE_IMPLICIT_ANIMATION = '/example-implicit-animation';
   static const CUSTOM_PAINTER_POLYGONS = '/custom-painter-polygons';
   static const THREE_D_DRAWER = '/three-d-drawer';
+  static const ANIMATED_PROMPT = '/animated-prompt';
 }

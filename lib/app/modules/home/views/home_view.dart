@@ -62,6 +62,12 @@ class HomeView extends GetView<HomeController> {
               },
               child: Text("3D Drawer"),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed(Routes.ANIMATED_PROMPT);
+              },
+              child: Text("Animated Prompt"),
+            ),
           ],
         ),
       ),
